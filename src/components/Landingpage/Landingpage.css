@@ -352,7 +352,7 @@ width: 50%;
   margin: -20px;
   padding: 10px;
   animation-name: mostrar;
-  animation-delay: 5s;
+  animation-delay: 4s;
   animation-duration: 5s;
   animation-iteration-count: initial;
 }
