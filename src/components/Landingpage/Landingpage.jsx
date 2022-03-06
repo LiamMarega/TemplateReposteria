@@ -2,23 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Landingpage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { fadeIn } from 'react-animations'
+import { fadeIn } from "react-animations";
 import {
   imgFacebookLogo,
   imgInstagramLogo,
   imgNavBar,
   LocalAnimado,
   FondoLogo,
-  bar1,
   bar2,
   bar3,
-  bar4,
-  bar5,
-  bar6,
-  bar7,
-  bar8,
-  bar9,
-  bar10,
+  torta1,
+  torta2,
+  torta3,
 } from "../../images/index.jsx";
 
 import {
@@ -75,7 +70,7 @@ function Landingpage() {
         fluid={+true}
         className={loading ? "loading true" : "loading false"}
       >
-          <Spinner animation="grow" variant="light" />
+        <Spinner animation="grow" variant="light" />
       </Container>
       <Container fluid={+true} className="LandingPage__Container">
         <Navbar fixed="top">
@@ -130,7 +125,6 @@ function Landingpage() {
               <div className="Landing__Letras">
                 <h1>Food & Drink</h1>
                 <h3>Pastelería, postres ¡y mucho más!</h3>
-
               </div>
               <div className="LandingRedes">
                 <a
@@ -161,18 +155,17 @@ function Landingpage() {
           </Col>
         </Row>
         <Row className="LandingPage__Container_Row_Dos">
-          <Col xs={3} xl={12}>
+          <Col xs={12} xl={12}>
             <Figure className="LandingPage__LogoBar">
               <Figure.Image
-                width={500}
-                height={500}
+                className="FigureLocal"
                 alt="LocalAnimado"
                 src={LocalAnimado}
               />
             </Figure>
           </Col>
 
-          <Col xs={12} xl={6}>
+          <Col xs={12} xl={12}>
             <h2>LADO NORTE</h2>
             <p id="letraReposteria">Reposteria Parana, Entre Ríos.</p>
             <p>
@@ -183,7 +176,7 @@ function Landingpage() {
               organizar textos extensos.
             </p>
             <a href="https://portfolio-liammarega.netlify.app/">
-            <p>Portfolio</p>
+              <p>Portfolio</p>
             </a>
           </Col>
         </Row>
@@ -193,7 +186,7 @@ function Landingpage() {
           id="about"
           className="LandingPage__Container_Row_Cuatro"
         >
-          <Col xs={12} xl={6}>
+          <Col sm={12} md={6} xl={6}>
             <p>
               El disco bar Food & Drink, ubicado en la zona rosa de Pereira , es
               uno de los locales mas climatizados el cual disfruta de un
@@ -216,7 +209,7 @@ function Landingpage() {
               divertida.
             </p>
           </Col>
-          <Col xs={12} xl={6}>
+          <Col sm={12} md={6} xl={6}>
             <Image className="FondoLogoImagen" src={FondoLogo}></Image>
           </Col>
         </Row>
@@ -226,21 +219,17 @@ function Landingpage() {
           id="about"
           className="LandingPage__Container_Row_Cinco"
         >
-          <Col xs={12} xl={6}>
+          <Col className="LogoImagenInfo" sm={12} md={6} xl={6}>
             <Image className="LogoImagenInfo" src={bar2}></Image>
-              <h3>Horarios</h3> <p>6:00 am - 19:00 pm</p>
-              
+            <h3>Horarios</h3> <p>6:00 am - 19:00 pm</p>
             <Image className="LogoImagenInfo" src={bar3}></Image>
-              <h3>Horarios</h3> <p>Entre Ríos, Paraná.</p>
-              
+            <h3>Horarios</h3> <p>Entre Ríos, Paraná.</p>
           </Col>
 
-          <Col xs={12} xl={6}>
+          <Col sm={12} md={6} xl={6}>
             <iframe
-            className="Mapa"
+              className="Mapa"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54285.58907590346!2d-60.55006831376418!3d-31.747313687934355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses-419!2sar!4v1646352251697!5m2!1ses-419!2sar"
-              width="500"
-              height="500"
               loading="lazy"
             ></iframe>
           </Col>
@@ -368,7 +357,21 @@ function Landingpage() {
             </a>
           </Col>
         </Row> */}
-      
+        <Row
+          fluid={+true}
+          id="about"
+          className="LandingPage__Container_Row_Siete"
+        >
+          <Col sm={12} md={6} xl={6}>
+            <Image className="ImagenTorta1" src={torta1}></Image>
+          </Col>
+
+          <Col className="ImagenTorta2" sm={12} md={3} xl={3}>
+            <Image className="ImagenTorta2" src={torta2}></Image>
+
+            <Image className="ImagenTorta2" src={torta3}></Image>
+          </Col>
+        </Row>
         <Row className="LandingPage__Container_Row_Footer">
           <Col sm={12} xl={12}>
             <div className="centradoFooter">
