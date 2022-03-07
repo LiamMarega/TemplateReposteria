@@ -25,7 +25,7 @@ import {
   Nav,
   Navbar,
   Spinner,
-  Ratio,
+  Carousel,
 } from "react-bootstrap";
 
 import {
@@ -363,20 +363,17 @@ function Landingpage() {
           id="about"
           className="LandingPage__Container_Row_Siete"
         >
-          <Col sm={12} md={6} xl={6}>
-            <Ratio aspectRatio="1x1">
-              <Image className="ImagenTorta1" src={torta1}></Image>
-            </Ratio>
-          </Col>
-
-          <Col className="ImagenTorta2" sm={12} md={3} xl={3}>
-            <Ratio aspectRatio="1x1">
-              <Image className="ImagenTorta2" src={torta2}></Image>
-            </Ratio>
-            <Ratio aspectRatio="1x1">
-              <Image className="ImagenTorta2" src={torta3}></Image>
-            </Ratio>
-          </Col>
+          <Carousel className="NavBar__Carousel">
+            <Carousel.Item className="NavBar__Carousel" interval={4000}>
+              <img className="NavBar__Img" src={torta1} alt="First slide" />
+            </Carousel.Item>
+            <Carousel.Item interval={4000}>
+              <img src={torta2} alt="Second slide" className="NavBar__Img" />
+            </Carousel.Item>
+            <Carousel.Item interval={4000}>
+              <img className="NavBar__Img" src={torta3} alt="Third slide" />
+            </Carousel.Item>
+          </Carousel>
         </Row>
         <Row fluid={+true} className="LandingPage__Container_Row_Footer">
           <Col sm={12} xl={12}>
