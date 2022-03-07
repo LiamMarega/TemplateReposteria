@@ -25,6 +25,7 @@ import {
   Nav,
   Navbar,
   Spinner,
+  Ratio,
 } from "react-bootstrap";
 
 import {
@@ -235,7 +236,7 @@ function Landingpage() {
           </Col>
         </Row>
 
-        {/* <Row id="photos" className="LandingPage__Container_Row_Cinco">
+        {/*<Row id="photos" className="LandingPage__Container_Row_Cinco">
           <Col xs={12} sm={12} xl={3}>
             <a
               target="_blank"
@@ -245,7 +246,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar1}
+                src={torta1}
                 rounded
                 roundedCircle
               />
@@ -260,7 +261,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar2}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
@@ -275,7 +276,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar3}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
@@ -290,7 +291,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar10}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
@@ -305,7 +306,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar7}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
@@ -320,7 +321,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar6}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
@@ -335,7 +336,7 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar8}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
@@ -350,29 +351,34 @@ function Landingpage() {
               <Image
                 loading="lazy"
                 className="imgHover"
-                src={bar5}
+                src={torta1}
                 rounded
                 roundedCircle
               />{" "}
             </a>
           </Col>
-        </Row> */}
+        </Row>*/}
         <Row
           fluid={+true}
           id="about"
           className="LandingPage__Container_Row_Siete"
         >
           <Col sm={12} md={6} xl={6}>
-            <Image className="ImagenTorta1" src={torta1}></Image>
+            <Ratio aspectRatio="1x1">
+              <Image className="ImagenTorta1" src={torta1}></Image>
+            </Ratio>
           </Col>
 
           <Col className="ImagenTorta2" sm={12} md={3} xl={3}>
-            <Image className="ImagenTorta2" src={torta2}></Image>
-
-            <Image className="ImagenTorta2" src={torta3}></Image>
+            <Ratio aspectRatio="1x1">
+              <Image className="ImagenTorta2" src={torta2}></Image>
+            </Ratio>
+            <Ratio aspectRatio="1x1">
+              <Image className="ImagenTorta2" src={torta3}></Image>
+            </Ratio>
           </Col>
         </Row>
-        <Row className="LandingPage__Container_Row_Footer">
+        <Row fluid={+true} className="LandingPage__Container_Row_Footer">
           <Col sm={12} xl={12}>
             <div className="centradoFooter">
               <ul className="FooterList">
