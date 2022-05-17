@@ -88,6 +88,10 @@
   font-family: "Courgette", cursive;
   font-size: 2vmin !important;
 }
+
+.LandingPage__Container_Row_Cuatro p {
+margin-left: 50px;
+}
 .LandingPage__Container_Row_Cinco {
   height: 100%;
   -webkit-box-shadow: inset 0px 50px 25px -7px #f6ebcd;
@@ -187,10 +191,6 @@
   overflow:hidden;
 }
 
-.LandingPage__Container_Row_Siete img:hover {
-  transform: scale(1.25);
-}
-
 .LandingPage__Container_Row_Footer {
   height: 30%;
   background: #000000;
@@ -287,12 +287,7 @@
   justify-content: center;
   align-content: center;
 }
-.imgHover {
-  transition: 0.3s;
-}
-.imgHover:hover {
-  border: 5px solid #fda9c2;
-}
+
 
 .centradoFooter a {
   color: white;
@@ -502,6 +497,7 @@
 
     -webkit-box-shadow: inset 0px 50px 25px -7px #cdc288;
     box-shadow: inset 0px 50px 25px -7px #cdc288;
+
     background: #cdc288;
     display: flex;
     align-items: center;

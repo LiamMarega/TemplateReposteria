@@ -11,9 +11,14 @@ import {
   FondoLogo,
   bar2,
   bar3,
-  torta1,
-  torta2,
-  torta3,
+  Galeria1,
+  Galeria2,
+  Galeria3,
+  Galeria4,
+  Galeria5,
+  Galeria6,
+  Galeria7,
+  Galeria8,
 } from "../../images/index.jsx";
 
 import {
@@ -37,6 +42,62 @@ import {
 import { GiSuitcase } from "react-icons/gi";
 import { ImLocation2 } from "react-icons/im";
 import { IoLogoWhatsapp } from "react-icons/io";
+
+/* Material UI */
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+
+
+function srcset(image, size, rows = 2, cols = 2) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
+
+const itemData = [
+  {
+    img: Galeria1,
+    title: 'Breakfast',
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Galeria2,
+    title: 'Burger',
+  },
+  {
+    img: Galeria3,
+    title: 'Camera',
+  },
+  {
+    img: Galeria4,
+    title: 'Coffee',
+    cols: 2,
+  },
+  {
+    img: Galeria5,
+    title: 'Hats',
+    cols: 2,
+  },
+  {
+    img: Galeria6,
+    title: 'Honey',
+    author: '@arwinneil',
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Galeria7,
+    title: 'Basketball',
+  },
+  {
+    img: Galeria8,
+    title: 'Fern',
+  },
+];
 
 function Landingpage() {
   const [navBarBackground, setNavBarBackgorund] = useState(false);
@@ -167,8 +228,9 @@ function Landingpage() {
           </Col>
 
           <Col xs={12} xl={12}>
+            <Container>
             <h2>LADO NORTE</h2>
-            <p id="letraReposteria">Reposteria Parana, Entre Ríos.</p>
+            <p id="letraReposteria">Reposteria Paraná, Entre Ríos.</p>
             <p>
               Según Wikipedia, un párrafo es un discurso contenido en una unidad
               de texto que comparte una misma idea o punto de vista. Un párrafo
@@ -179,6 +241,7 @@ function Landingpage() {
             <a href="https://portfolio-liammarega.netlify.app/">
               <p>Portfolio</p>
             </a>
+            </Container>
           </Col>
         </Row>
 
@@ -236,144 +299,27 @@ function Landingpage() {
           </Col>
         </Row>
 
-        {/*<Row id="photos" className="LandingPage__Container_Row_Cinco">
-          <Col xs={12} sm={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />
-            </a>
-          </Col>
-          <Col xs={12} sm={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-          <Col xs={12} sm={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-          <Col className="imgOcultar" xs={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-          <Col className="imgOcultar" xs={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-          <Col className="imgOcultar" xs={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-          <Col className="imgOcultar" xs={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-          <Col className="imgOcultar" xs={12} xl={3}>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/empresasoluciones/"
-            >
-              {" "}
-              <Image
-                loading="lazy"
-                className="imgHover"
-                src={torta1}
-                rounded
-                roundedCircle
-              />{" "}
-            </a>
-          </Col>
-        </Row>*/}
         <Row
           fluid={+true}
           id="about"
           className="LandingPage__Container_Row_Siete"
         >
-          <Carousel className="NavBar__Carousel">
-            <Carousel.Item className="NavBar__Carousel" interval={4000}>
-              <img className="NavBar__Img" src={torta1} alt="First slide" />
-            </Carousel.Item>
-            <Carousel.Item interval={4000}>
-              <img src={torta2} alt="Second slide" className="NavBar__Img" />
-            </Carousel.Item>
-            <Carousel.Item interval={4000}>
-              <img className="NavBar__Img" src={torta3} alt="Third slide" />
-            </Carousel.Item>
-          </Carousel>
+       <ImageList
+      sx={{ width: "90%", height: "80%" }}
+      variant="quilted"
+      cols={4}
+      rowHeight={121}
+    >
+      {itemData.map((item) => (
+        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+          <img
+            {...srcset(item.img, 500, item.rows, item.cols)}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
         </Row>
         <Row fluid={+true} className="LandingPage__Container_Row_Footer">
           <Col sm={12} xl={12}>

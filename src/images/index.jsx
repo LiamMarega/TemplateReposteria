@@ -11,5 +11,13 @@ export { default as bar3 } from "./3.svg"
 export { default as bar4 } from "./4.svg"
 export { default as torta2 } from "./torta2.jpg"
 export { default as torta3 } from "./torta3.jpg"
+export { default as Galeria1 } from "./1.png"
+export { default as Galeria2 } from "./2.png"
+export { default as Galeria3 } from "./3.png"
+export { default as Galeria4 } from "./4.png"
+export { default as Galeria5 } from "./5.png"
+export { default as Galeria6 } from "./6.png"
+export { default as Galeria7 } from "./7.png"
+export { default as Galeria8 } from "./8.png"
 
 
