@@ -305,7 +305,7 @@ function Landingpage() {
           className="LandingPage__Container_Row_Siete"
         >
        <ImageList
-      sx={{ width: "90%", height: "80%" }}
+      sx={{ width: "80%", height: "50%" }}
       variant="quilted"
       cols={4}
       rowHeight={121}
