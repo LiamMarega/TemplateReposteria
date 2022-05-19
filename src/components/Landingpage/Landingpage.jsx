@@ -1,26 +1,42 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-scroll'
-import './Landingpage.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { fadeIn } from 'react-animations'
-import { imgFacebookLogo, imgInstagramLogo, imgNavBar, LocalAnimado, FondoLogo, bar2, bar3, Galeria1, Galeria2, Galeria3, Galeria4, Galeria5, Galeria6, Galeria7, Galeria8 } from '../../images/index.jsx'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+import './Landingpage.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { fadeIn } from 'react-animations';
+import { imgFacebookLogo, imgInstagramLogo, imgNavBar, LocalAnimado, FondoLogo, bar2, bar3, Galeria1, Galeria2, Galeria3, Galeria4, Galeria5, Galeria6, Galeria7, Galeria8 } from '../../images/index.jsx';
+import { ImgMenu } from '../../images/index.jsx';
+import { Container, Row, Col, Image, Figure, Nav, Navbar, Spinner, Carousel } from 'react-bootstrap';
 
-import { Container, Row, Col, Image, Figure, Nav, Navbar, Spinner, Carousel } from 'react-bootstrap'
-
-import { AiFillPhone, AiFillInstagram, AiFillFacebook, AiFillMail } from 'react-icons/ai'
-import { GiSuitcase } from 'react-icons/gi'
-import { ImLocation2 } from 'react-icons/im'
-import { IoLogoWhatsapp } from 'react-icons/io'
+import { AiFillPhone, AiFillInstagram, AiFillFacebook, AiFillMail } from 'react-icons/ai';
+import { GiSuitcase } from 'react-icons/gi';
+import { ImLocation2 } from 'react-icons/im';
+import { IoLogoWhatsapp } from 'react-icons/io';
 
 /* Material UI */
-import ImageList from '@mui/material/ImageList'
-import ImageListItem from '@mui/material/ImageListItem'
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  width: 400,
+  transform: 'translate(-50%, -50%)',
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4
+};
 
 function srcset(image, size, rows = 2, cols = 2) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
     srcSet: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`
-  }
+  };
 }
 
 const itemData = [
@@ -63,37 +79,57 @@ const itemData = [
     img: Galeria8,
     title: 'Fern'
   }
-]
+];
 
 function Landingpage() {
-  const [navBarBackground, setNavBarBackgorund] = useState(false)
-  const [loading, setLoading] = useState(true)
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [navBarBackground, setNavBarBackgorund] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const changeBackground = () => {
     if (screen.width < 1500) {
       if (window.scrollY >= 10) {
-        setNavBarBackgorund(true)
+        setNavBarBackgorund(true);
       }
     } else if (window.scrollY >= 790) {
-      setNavBarBackgorund(true)
+      setNavBarBackgorund(true);
     } else {
-      setNavBarBackgorund(false)
+      setNavBarBackgorund(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeBackground)
+  window.addEventListener('scroll', changeBackground);
 
   const containerStyle = {
     backgroundImage: `url(${imgNavBar})`,
     backgroundAttachment: `fixed`
-  }
+  };
 
   setTimeout(() => {
-    setLoading(false)
-  }, 5000)
+    setLoading(false);
+  }, 5000);
 
   return (
     <>
+      <Modal
+        aria-labelledby='transition-modal-title'
+        aria-describedby='transition-modal-description'
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500
+        }}
+      >
+        <Fade in={open}>
+          <Box sx={style}>
+            <Image src={ImgMenu} width='100%' />
+          </Box>
+        </Fade>
+      </Modal>
       <Container fluid={+true} className={loading ? 'loading true' : 'loading false'}>
         <Spinner animation='grow' variant='light' />
       </Container>
@@ -113,6 +149,9 @@ function Landingpage() {
               </Link>
               <Link activeClass='active' to='photos' smooth={true} duration={1000} delay={100}>
                 <Nav>Fotos</Nav>
+              </Link>
+              <Link onClick={handleOpen}>
+                <Nav>Menu</Nav>
               </Link>
             </Nav>
           </Container>
@@ -144,12 +183,19 @@ function Landingpage() {
 
           <Col xs={12} xl={12}>
             <Container>
-              <h2>LADO NORTE</h2>
-              <p id='letraReposteria'>Reposteria Paraná, Entre Ríos.</p>
-              <p>Según Wikipedia, un párrafo es un discurso contenido en una unidad de texto que comparte una misma idea o punto de vista. Un párrafo se compone de una o más frases. Aunque se contempla como norma en ningún idioma, los párrafos se emplean en la escritura formal para organizar textos extensos.</p>
-              <a href='https://portfolio-liammarega.netlify.app/'>
-                <p>Portfolio</p>
-              </a>
+              <Col>
+                <h2>LADO NORTE</h2>
+                <p id='letraReposteria'>Reposteria Paraná, Entre Ríos.</p>
+                <p>Según Wikipedia, un párrafo es un discurso contenido en una unidad de texto que comparte una misma idea o punto de vista. Un párrafo se compone de una o más frases. Aunque se contempla como norma en ningún idioma, los párrafos se emplean en la escritura formal para organizar textos extensos.</p>
+              </Col>
+              <Col className='Col_Button'>
+                <button onClick={handleOpen} class='learn-more'>
+                  <span class='circle' aria-hidden='true'>
+                    <span class='icon arrow'></span>
+                  </span>
+                  <span class='button-text'>Ver menu</span>
+                </button>
+              </Col>
             </Container>
           </Col>
         </Row>
@@ -183,15 +229,25 @@ function Landingpage() {
         </Row>
 
         <Row fluid={+true} id='about' className='LandingPage__Container_Row_Siete'>
-          <ImageList sx={{ width: '80%', height: '50%' }} variant='quilted' cols={4} rowHeight={121}>
-            {itemData.map((item) => (
-              <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                <img {...srcset(item.img, 500, item.rows, item.cols)} alt={item.title} loading='lazy' />
-              </ImageListItem>
-            ))}
-          </ImageList>
+          <Col sm={12} className='Container_Col_Images'>
+            <ImageList sx={{ width: '100%', height: '50%' }} variant='quilted' cols={4} rowHeight={121}>
+              {itemData.map((item) => (
+                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                  <img {...srcset(item.img, 500, item.rows, item.cols)} alt={item.title} loading='lazy' />
+                </ImageListItem>
+              ))}
+            </ImageList>
+          </Col>
+          <Col sm={12}>
+            <button onClick={handleOpen} class='learn-more'>
+              <span class='circle' aria-hidden='true'>
+                <span class='icon arrow'></span>
+              </span>
+              <span class='button-text'>Ver menu</span>
+            </button>
+          </Col>
         </Row>
-        
+
         <Row fluid={+true} className='LandingPage__Container_Row_Footer'>
           <Col sm={12} xl={12}>
             <div className='centradoFooter'>
@@ -232,7 +288,7 @@ function Landingpage() {
         </Row>
       </Container>
     </>
-  )
+  );
 }
 
-export default Landingpage
+export default Landingpage;

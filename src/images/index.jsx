@@ -19,5 +19,6 @@ export { default as Galeria5 } from "./5.png"
 export { default as Galeria6 } from "./6.png"
 export { default as Galeria7 } from "./7.png"
 export { default as Galeria8 } from "./8.png"
+export { default as ImgMenu } from "./Menu.png"
 
 
