@@ -107,9 +107,11 @@ function Landingpage() {
     backgroundAttachment: `fixed`
   };
 
-  setTimeout(() => {
-    setLoading(false);
-  }, 5000);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
 
   return (
     <>
@@ -130,6 +132,7 @@ function Landingpage() {
           </Box>
         </Fade>
       </Modal>
+
       <Container fluid={+true} className={loading ? 'loading true' : 'loading false'}>
         <Spinner animation='grow' variant='light' />
       </Container>
