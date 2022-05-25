@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro&display=swap");
+@import "../Resource/Variables.css";
 
 *::-webkit-scrollbar {
   width: 10px;
-  background-color: #fda9c2;
+  background-color:  var(--color-terciario);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -11,10 +12,10 @@
 
 .LandingPage__Container {
   height: 100vh;
-  background-color: #fef9de;
+  background-color: var(--color-primario);
   z-index: 2;
-  -webkit-box-shadow: -1px -36px 42px 6px#FEF9DE;
-  box-shadow: -1px -36px 42px 6px#FEF9DE;
+  -webkit-box-shadow: -1px -36px 42px 6px var(--color-primario);
+  box-shadow: -1px -36px 42px 6px var(--color-primario);
   color: black;
 }
 
@@ -24,7 +25,7 @@
 
 .loading.true {
   height: 100vh;
-  background-color: #fda9c2;
+  background-color:  var(--color-terciario);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -46,9 +47,7 @@
 
 .LandingPage__Container_Row_Dos {
   height: 100%;
-  -webkit-box-shadow: inset 0px 50px 25px -7px #fef9de;
-  box-shadow: inset 0px 50px 25px -7px #fef9de;
-  background-color: #fef9de;
+  background-color:  var(--color-primario);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,9 +66,6 @@
 
 .LandingPage__Container_Row_Tres {
   height: 50%;
-  -webkit-box-shadow: inset 0px -50px 50px 0px #fef9de,
-    inset 0px 50px 50px 0px #fef9de;
-  box-shadow: inset 0px -50px 50px 0px #fef9de, inset 0px 50px 50px 0px #fef9de;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,9 +75,9 @@
 
 .LandingPage__Container_Row_Cuatro {
   height: 100%;
-  -webkit-box-shadow: inset 0px 50px 25px -7px #cdc288;
-  box-shadow: inset 0px 50px 25px -7px #cdc288;
-  background: #cdc288;
+  -webkit-box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+  box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+  background:  var(--color-secundario);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +115,7 @@
 
 .LandingPage__Container_Row_Cinco {
   height: 100%;
-  background-color: #fef9de;
+  background-color:  var(--color-primario);
 
   display: flex;
   align-items: center;
@@ -128,15 +124,15 @@
 
 .LandingPage__Container_Row_Seis {
   height: 70%;
-  background: #fef9de;
-  background: -moz-linear-gradient(top, #fef9de 0%, #fef9de 31%, #000000 100%);
+  background:  var(--color-primario);
+  background: -moz-linear-gradient(top,  var(--color-primario) 0%,  var(--color-primario) 31%, #000000 100%);
   background: -webkit-linear-gradient(
     top,
-    #fef9de 0%,
-    #fef9de 31%,
+     var(--color-primario) 0%,
+     var(--color-primario) 31%,
     #000000 100%
   );
-  background: linear-gradient(to bottom, #fef9de 0%, #fef9de 31%, #000000 100%);
+  background: linear-gradient(to bottom,  var(--color-primario) 0%,  var(--color-primario) 31%, #000000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,8 +156,8 @@
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 32px 9px #fda9c2;
-  box-shadow: 5px 5px 32px 9px #fda9c2;
+  -webkit-box-shadow: 5px 5px 32px 9px  var(--color-terciario);
+  box-shadow: 5px 5px 32px 9px  var(--color-terciario);
 }
 
 .LandingPage__Container_Row_Siete {
@@ -293,7 +289,7 @@
 }
 
 .centradoFooter a:hover {
-  color: #fda9c2;
+  color:  var(--color-terciario);
   text-decoration: none !important;
 }
 
@@ -329,7 +325,7 @@
 }
 
 .navbar.active {
-  background-color: #fda9c2;
+  background-color:  var(--color-terciario);
   padding: 19px;
   align-content: center;
   align-items: center;
@@ -343,7 +339,7 @@
 }
 
 .Container_Landing__Letras {
-  background-color: #fda9c2;
+  background-color:  var(--color-terciario);
   width: 50%;
   border-radius: 0px 20px 20px 0px;
   margin: -20px;
@@ -492,9 +488,9 @@ button {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .LandingPage__Container_Row_Cuatro {
     height: 100%;
-    -webkit-box-shadow: inset 0px 50px 25px -7px #cdc288;
-    box-shadow: inset 0px 50px 25px -7px #cdc288;
-    background: #cdc288;
+    -webkit-box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+    box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+    background:  var(--color-secundario);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,9 +531,9 @@ button {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .LandingPage__Container_Row_Cuatro {
     height: 100%;
-    -webkit-box-shadow: inset 0px 50px 25px -7px #cdc288;
-    box-shadow: inset 0px 50px 25px -7px #cdc288;
-    background: #cdc288;
+    -webkit-box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+    box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+    background:  var(--color-secundario);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -593,7 +589,7 @@ button {
 @media only screen and (max-width: 575px) {
   *::-webkit-scrollbar {
     width: 5px;
-    background-color: #fda9c2;
+    background-color:  var(--color-terciario);
   }
 
   *::-webkit-scrollbar-thumb {
@@ -603,10 +599,10 @@ button {
   .LandingPage__Container_Row_Cuatro {
     height: 100%;
 
-    -webkit-box-shadow: inset 0px 50px 25px -7px #cdc288;
-    box-shadow: inset 0px 50px 25px -7px #cdc288;
+    -webkit-box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
+    box-shadow: inset 0px 50px 25px -7px  var(--color-secundario);
 
-    background: #cdc288;
+    background:  var(--color-secundario);
     display: flex;
     align-items: center;
     justify-content: center;
