@@ -1,0 +1,45 @@
+.LandingPage__Container_Row_Footer {
+  height: 30%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-family: 'Courgette', cursive;
+  font-size: 1rem;
+}
+
+.FooterList {
+  list-style: none;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-right: 5px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.FooterList li {
+  margin-right: 30px;
+}
+
+.centradoFooter {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.centradoFooter a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.centradoFooter a:hover {
+  color: var(--color-terciario);
+  text-decoration: none !important;
+}
