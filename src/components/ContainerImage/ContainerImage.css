@@ -1,0 +1,47 @@
+.Landingpage__Container_image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Container_Landing__Letras {
+  background-color: var(--color-terciario);
+  width: 50%;
+  border-radius: 0px 20px 20px 0px;
+  margin: -20px;
+  padding: 10px;
+  animation-name: mostrar;
+  animation-delay: 4s;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+}
+
+.Landing__Letras h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-family: 'Courgette', cursive;
+}
+
+.Landing__Letras h3 {
+  color: white;
+  font-family: 'Courgette', cursive;
+}
+
+.LandingRedes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

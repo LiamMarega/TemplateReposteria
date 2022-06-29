@@ -1,0 +1,79 @@
+.LandingPage__Container_NavBar {
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  transition: 1.5s;
+}
+
+#imgNavbar {
+  position: relative;
+  top: -45px; /* ajustar los valores para mover la imagen */
+  left: -5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 30%;
+  border: 2px solid #fff;
+  display: block;
+}
+
+.navbar {
+  top: -10px;
+  width: 100%;
+
+  font-size: 1.2rem;
+  transition: 0.7s;
+  color: black;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.navbar a {
+  margin-right: 20px;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar.false {
+  background-color: transparent;
+  padding: 19px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar.active {
+  background-color: var(--color-terciario);
+  padding: 19px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.me-auto.navbar-nav {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavBar__Nav {
+  background: rgba(17, 56, 97, 0.857);
+  height: 20px;
+  width: 100vw;
+  -webkit-box-shadow: inset 0px -50px 31px 50px #181935;
+  box-shadow: inset 0px -50px 31px 50px #181935;
+}
+
+.NavBar__Img {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  -webkit-box-shadow: inset 0px -50px 31px 50px #181935;
+  box-shadow: inset 0px -50px 31px 50px #181935;
+}

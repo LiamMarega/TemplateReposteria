@@ -1,0 +1,32 @@
+.LandingPage__Container_Row_Cuatro {
+  height: 100%;
+  min-height: 50vh;
+  -webkit-box-shadow: inset 0px 50px 25px -7px #f6ebcd;
+  box-shadow: inset 0px 50px 25px -7px #f6ebcd;
+  background: #f6ebcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courgette', cursive;
+  font-size: 2.5vmin;
+  padding: 0;
+  background-color: var(--color-primario);
+}
+
+.LogoImagenInfo {
+  width: 20%;
+}
+
+.Mapa {
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Tablets y phablets */
+@media only screen and (max-width: 576px) {
+  .LogoImagenInfo {
+    width: 60%;
+  }
+}
