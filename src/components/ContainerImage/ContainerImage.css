@@ -1,6 +1,6 @@
 .Landingpage__Container_image {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -31,12 +31,12 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .Landing__Letras h3 {
   color: white;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .LandingRedes {

@@ -1,12 +1,11 @@
 .LandingPage__Container_Row_Dos {
-  height: 100%;
-  padding: 0;
+  width: 100%;
   padding-bottom: 20%;
   background-color: var(--color-primario);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .LandingPage__Container_Row_Dos h2 {
@@ -15,8 +14,8 @@
 }
 
 .LandingPage__Container_Row_Dos p {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 #letraReposteria {
@@ -31,7 +30,7 @@
 }
 
 .FigureLocal {
-  width: 50%;
+  width: 80%;
 }
 
 button.learn-more {
@@ -69,7 +68,7 @@ button.learn-more .circle .icon.arrow {
 
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -0.29rem;
   right: 0.0625rem;
   width: 0.625rem;

@@ -2,16 +2,17 @@
   height: 100%;
   min-height: 100vh;
   padding: 0;
+  width: 100%;
   -webkit-box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
   box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
   background: var(--color-secundario);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .LandingPage__Container_Row_Tres p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 10% 0%;
 }
