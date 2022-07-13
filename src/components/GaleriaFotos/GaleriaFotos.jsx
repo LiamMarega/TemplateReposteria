@@ -13,7 +13,7 @@ import {
   Galeria8
 } from "../../images/index.jsx";
 
-function GaleriaFotos({ handleOpen }) {
+function GaleriaFotos() {
   const itemData = [
     {
       img: Galeria1,
@@ -56,6 +56,13 @@ function GaleriaFotos({ handleOpen }) {
     }
   ];
 
+  const handleOpen = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=+543436203341&text=Hola,%20vi%20la%20plantilla%20de%20tu%20pagina%20web%20y%20me%20gustar%C3%ADa%20recibir%20mas%20informaci%C3%B3n!",
+      "_blank"
+    );
+  };
+
   function srcset(image, size, rows = 2, cols = 2) {
     return {
       src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -95,7 +102,7 @@ function GaleriaFotos({ handleOpen }) {
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
-            <span className="button-text">Ver menu</span>
+            <span className="button-text">¡Resera ahora!</span>
           </button>
         </Col>
       </Row>

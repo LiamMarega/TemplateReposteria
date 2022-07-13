@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro&display=swap');
-@import '../Resource/Variables.css';
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro&display=swap");
+@import "../Resource/Variables.css";
 
 *::-webkit-scrollbar {
   width: 10px;
@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-size: 5rem;
 }
 
@@ -54,9 +54,24 @@
 .LandingPage__Container_Row_Seis {
   height: 70%;
   background: var(--color-primario);
-  background: -moz-linear-gradient(top, var(--color-primario) 0%, var(--color-primario) 31%, #000000 100%);
-  background: -webkit-linear-gradient(top, var(--color-primario) 0%, var(--color-primario) 31%, #000000 100%);
-  background: linear-gradient(to bottom, var(--color-primario) 0%, var(--color-primario) 31%, #000000 100%);
+  background: -moz-linear-gradient(
+    top,
+    var(--color-primario) 0%,
+    var(--color-primario) 31%,
+    #000000 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--color-primario) 0%,
+    var(--color-primario) 31%,
+    #000000 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--color-primario) 0%,
+    var(--color-primario) 31%,
+    #000000 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,12 +131,12 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .Landing__Letras h3 {
   color: white;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .logos {
@@ -194,7 +209,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
   .LandingPage__Container_Row_Dos h2 {
     font-size: 1.5rem;
@@ -222,7 +237,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
     font-size: 2vmin !important;
   }
   .LandingPage__Container_Row_Dos h2 {
@@ -239,12 +254,12 @@ button {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
 
   .Landing__Letras h3 {
     color: white;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
   .Mapa {
     width: 50%;
@@ -275,7 +290,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
     font-size: 2vmin !important;
   }
   .LandingPage__Container_Row_Dos h2 {
@@ -284,6 +299,7 @@ button {
   }
   .FondoLogoImagen {
     width: 50%;
+    padding-bottom: 10%;
   }
   .Landing__Letras h1 {
     width: 100%;
@@ -292,12 +308,12 @@ button {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
 
   .Landing__Letras h3 {
     color: white;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
   .Mapa {
     width: 50%;
