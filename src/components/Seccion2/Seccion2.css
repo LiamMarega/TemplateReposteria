@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .LandingPage__Container_Row_Dos h2 {
@@ -15,8 +15,8 @@
 }
 
 .LandingPage__Container_Row_Dos p {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 #letraReposteria {
@@ -69,7 +69,7 @@ button.learn-more .circle .icon.arrow {
 
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -0.29rem;
   right: 0.0625rem;
   width: 0.625rem;

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import React, { useState } from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-scroll";
 
-import './NavBar.css';
+import "./NavBar.css";
 
 function NavBar({ handleOpen }) {
   const [navBarBackground, setNavBarBackgorund] = useState(false);
@@ -19,24 +19,27 @@ function NavBar({ handleOpen }) {
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener("scroll", changeBackground);
 
   return (
     <>
-      <Navbar fixed='top'>
-        <Container className={navBarBackground ? 'navbar active' : 'navbar false'} fluid={+true}>
-          <Link activeClass='active' to='home' smooth={true} duration={1000} delay={100}>
+      <Navbar fixed="top">
+        <Container
+          className={navBarBackground ? "navbar active" : "navbar false"}
+          fluid={+true}
+        >
+          <Link activeClass="active" to="home" smooth={true}>
             <Navbar.Brand>F&D</Navbar.Brand>
           </Link>
 
-          <Nav className='me-auto'>
-            <Link activeClass='active' to='home' smooth={true} duration={1000} delay={100}>
+          <Nav className="me-auto">
+            <Link activeClass="active" to="home" smooth={true}>
               <Nav>Inicio</Nav>
             </Link>
-            <Link activeClass='active' to='about' smooth={true} duration={1000} delay={100}>
+            <Link activeClass="active" to="about" smooth={true}>
               <Nav>Sobre Nosotros</Nav>
             </Link>
-            <Link activeClass='active' to='photos' smooth={true} duration={1000} delay={100}>
+            <Link activeClass="active" to="photos" smooth={true}>
               <Nav>Fotos</Nav>
             </Link>
             <Link onClick={handleOpen}>

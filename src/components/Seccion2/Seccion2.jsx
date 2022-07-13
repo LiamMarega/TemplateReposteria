@@ -1,14 +1,18 @@
-import React from 'react';
-import { Container, Row, Col, Figure } from 'react-bootstrap';
-import { LocalAnimado } from '../../images/index';
-import './Seccion2.css';
+import React from "react";
+import { Container, Row, Col, Figure } from "react-bootstrap";
+import { LocalAnimado } from "../../images/index";
+import "./Seccion2.css";
 function Seccion2({ handleOpen }) {
   return (
     <Container fluid style={{ margin: 0, padding: 0 }}>
-      <Row className='LandingPage__Container_Row_Dos'>
+      <Row className="LandingPage__Container_Row_Dos">
         <Col xs={12} xl={12}>
-          <Figure className='LandingPage__LogoBar'>
-            <Figure.Image className='FigureLocal' alt='LocalAnimado' src={LocalAnimado} />
+          <Figure className="LandingPage__LogoBar">
+            <Figure.Image
+              className="FigureLocal"
+              alt="LocalAnimado"
+              src={LocalAnimado}
+            />
           </Figure>
         </Col>
 
@@ -16,15 +20,27 @@ function Seccion2({ handleOpen }) {
           <Container>
             <Col>
               <h2>LADO NORTE</h2>
-              <p id='letraReposteria'>Reposteria Paraná, Entre Ríos.</p>
-              <p>Según Wikipedia, un párrafo es un discurso contenido en una unidad de texto que comparte una misma idea o punto de vista. Un párrafo se compone de una o más frases. Aunque se contempla como norma en ningún idioma, los párrafos se emplean en la escritura formal para organizar textos extensos.</p>
+              <p id="letraReposteria">Reposteria Paraná, Entre Ríos.</p>
+              <p>
+                {" "}
+                El disco bar Food & Drink, ubicado en la zona rosa de Pereira ,
+                es uno de los locales mas climatizados el cual disfruta de un
+                ambiente divertido con una decoración espectacular, suambiente
+                moderno te asegura una noche divertida única y inolvidable.{" "}
+                <br /> <br /> Su estructura se presenta como una obra 160
+                metros, por 90 metros aproximadamente capacidad aproximadamente
+                para 250 personas y unaespectacular infraestructura en sonido,
+                iluminación y video imagen. En Food & Drink lo encontraras todo,
+                Alta tecnología, decoración vanguardista, son mezclas originales
+                para que bailes desde tu mesa oen la pista.
+              </p>
             </Col>
-            <Col className='Col_Button'>
-              <button onClick={handleOpen} className='learn-more'>
-                <span className='circle' aria-hidden='true'>
-                  <span className='icon arrow'></span>
+            <Col className="Col_Button">
+              <button onClick={handleOpen} className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
                 </span>
-                <span className='button-text'>Ver menu</span>
+                <span className="button-text">Ver menu</span>
               </button>
             </Col>
           </Container>
