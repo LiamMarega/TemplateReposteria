@@ -11,7 +11,7 @@ function Seccion3() {
       className="LandingPage__Container_Row_Tres"
     >
       <Container>
-        <Row id="about">
+        <Row>
           <Col sm={12} md={6} xl={6}>
             <p>
               <br /> <br />

@@ -69,7 +69,7 @@ function GaleriaFotos() {
   return (
     <Container fluid className="LandingPage__Container_Galeria">
       <Container>
-        <Row id="about">
+        <Row>
           <Col sm={12} className="Container_Col_Images">
             <ImageList variant="quilted" cols={4} rowHeight={121}>
               {itemData.map((item) => (

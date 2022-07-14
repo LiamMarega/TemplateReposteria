@@ -14,7 +14,7 @@ import NavBar from "../NavBar/NavBar";
 import ContainerImage from "../ContainerImage/ContainerImage";
 import Seccion2 from "../Seccion2/Seccion2";
 import Seccion3 from "../Seccion3/Seccion3";
-import Seccion4 from "../Seccion4/Seccion4";
+import Seccion5 from "../Seccion5/Seccion5";
 import Footer from "../Footer/Footer";
 import GaleriaFotos from "../GaleriaFotos/GaleriaFotos";
 
@@ -66,7 +66,7 @@ function Landingpage() {
         {/* SECCION Image 3 */}
         <Seccion3 />
         {/* SECCION Image 4 */}
-        <Seccion4 />
+        <Seccion5 />
         {/* SECCION 5 Galeria */}
         <GaleriaFotos />
         {/* SECCION Footer */}

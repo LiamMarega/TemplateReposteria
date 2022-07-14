@@ -1,8 +1,7 @@
 .LandingPage__Container_Row_Cinco {
   height: 100%;
   min-height: 50vh;
-  -webkit-box-shadow: inset 0px 50px 25px -7px #f6ebcd;
-  box-shadow: inset 0px 50px 25px -7px #f6ebcd;
+
   background: #f6ebcd;
   display: flex;
   align-items: center;

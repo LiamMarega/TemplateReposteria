@@ -4,9 +4,9 @@ import { bar2, bar3 } from "../../images/index";
 import "./Seccion5.css";
 function Seccion5() {
   return (
-    <Container fluid>
+    <Container fluid className="LandingPage__Container_Row_Cinco">
       <Container>
-        <Row id="about" className="LandingPage__Container_Row_Cinco">
+        <Row id="about">
           <Col className="LogoImagenInfo" sm={12} md={6} xl={6}>
             <Image className="LogoImagenInfo" src={bar2}></Image>
             <h3>Horarios</h3> <p>6:00 am - 19:00 pm</p>
