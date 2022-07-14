@@ -1,17 +1,9 @@
 .LandingPage__Container_Row_Cuatro {
-  height: 70vh;
-  min-height: 70vh;
-
-  -webkit-box-shadow: inset 0px 50px 25px -7px #f6ebcd;
-  box-shadow: inset 0px 50px 25px -7px #f6ebcd;
-  background: #f6ebcd;
+  width: 100%;
+  height: 50vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-family: "Courgette", cursive;
-  font-size: 2.5vmin;
-  padding: 0;
-  background-color: var(--color-primario);
+  align-items: center;
 }
 
 .LogoImagenInfo {

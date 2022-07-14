@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro&display=swap');
-@import '../Resource/Variables.css';
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro&display=swap");
+@import "../Resource/Variables.css";
 
 *::-webkit-scrollbar {
   width: 10px;
@@ -10,40 +10,12 @@
   background: #000000;
 }
 
-.LandingPage__Container {
-  height: 100vh;
-  background-color: var(--color-primario);
-  z-index: 2;
-  -webkit-box-shadow: -1px -36px 42px 6px var(--color-primario);
-  box-shadow: -1px -36px 42px 6px var(--color-primario);
-  color: black;
-}
-
-.loading {
-  z-index: 5;
-}
-
-.loading.true {
-  height: 100vh;
-  background-color: var(--color-terciario);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: fixed;
-  overflow: hidden;
-}
-
-.loading.false {
-  display: none;
-}
-
 .LandingPage__Container_Row_Tres {
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-size: 5rem;
 }
 
@@ -54,9 +26,24 @@
 .LandingPage__Container_Row_Seis {
   height: 70%;
   background: var(--color-primario);
-  background: -moz-linear-gradient(top, var(--color-primario) 0%, var(--color-primario) 31%, #000000 100%);
-  background: -webkit-linear-gradient(top, var(--color-primario) 0%, var(--color-primario) 31%, #000000 100%);
-  background: linear-gradient(to bottom, var(--color-primario) 0%, var(--color-primario) 31%, #000000 100%);
+  background: -moz-linear-gradient(
+    top,
+    var(--color-primario) 0%,
+    var(--color-primario) 31%,
+    #000000 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--color-primario) 0%,
+    var(--color-primario) 31%,
+    #000000 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--color-primario) 0%,
+    var(--color-primario) 31%,
+    #000000 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +71,7 @@
   box-shadow: 5px 5px 32px 9px var(--color-terciario);
 }
 
-.LandingPage__Container_Row_Siete {
+.LandingPage__Container_Galeria {
   height: 100%;
   background: #000000;
   align-items: center;
@@ -93,14 +80,14 @@
   overflow: hidden;
 }
 
-.LandingPage__Container_Row_Siete .ImagenTorta1 {
+.LandingPage__Container_Galeria .ImagenTorta1 {
   width: 100%;
   height: 100%;
   margin: 0px;
   transition: 1s;
 }
 
-.LandingPage__Container_Row_Siete .ImagenTorta2 {
+.LandingPage__Container_Galeria .ImagenTorta2 {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -116,12 +103,12 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .Landing__Letras h3 {
   color: white;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 
 .logos {
@@ -185,75 +172,6 @@ button {
 /*----MEDIA QUERY---- */ /*----MEDIA QUERY---- */ /*----MEDIA QUERY---- */
 /*----MEDIA QUERY---- */ /*----MEDIA QUERY---- */ /*----MEDIA QUERY---- */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .LandingPage__Container_Row_Tres {
-    height: 100%;
-    -webkit-box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
-    box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
-    background: var(--color-secundario);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Courgette', cursive;
-  }
-  .LandingPage__Container_Row_Dos h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .FondoLogoImagen {
-    width: 50%;
-  }
-
-  .Mapa {
-    width: 50%;
-    height: 200px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-}
-
-/* Tablets y phablets */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .LandingPage__Container_Row_Tres {
-    height: 100%;
-    -webkit-box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
-    box-shadow: inset 0px 50px 25px -7px var(--color-secundario);
-    background: var(--color-secundario);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Courgette', cursive;
-    font-size: 2vmin !important;
-  }
-  .LandingPage__Container_Row_Dos h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .FondoLogoImagen {
-    width: 50%;
-  }
-  .Landing__Letras h1 {
-    width: 100%;
-    height: 100%;
-    font-size: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    font-family: 'Courgette', cursive;
-  }
-
-  .Landing__Letras h3 {
-    color: white;
-    font-family: 'Courgette', cursive;
-  }
-  .Mapa {
-    width: 50%;
-    height: 200px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-}
-
 /* Teléfonos */
 @media only screen and (max-width: 575px) {
   *::-webkit-scrollbar {
@@ -275,7 +193,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
     font-size: 2vmin !important;
   }
   .LandingPage__Container_Row_Dos h2 {
@@ -292,12 +210,12 @@ button {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
 
   .Landing__Letras h3 {
     color: white;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
   }
   .Mapa {
     width: 50%;
@@ -305,7 +223,7 @@ button {
     padding: 10px;
     border-radius: 20px;
   }
-  .LandingPage__Container_Row_Siete .ImagenTorta2 {
+  .LandingPage__Container_Galeria .ImagenTorta2 {
     width: 100%;
     display: flex;
     flex-direction: column;
